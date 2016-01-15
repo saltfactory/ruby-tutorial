@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyText
+  commontable_id: 
+  commontable_type: Commontable
+
+two:
+  body: MyText
+  commontable_id: 
+  commontable_type: Commontable
