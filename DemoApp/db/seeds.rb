@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Article.find_or_create_by(subject: "first article") do |article|
+  article.tag_names = "t1, t2, t3"
+end
+
+Book.find_or_create_by(title: "first book") do |book|
+  book.tags << Tag.new(name: "tag1")
+end
